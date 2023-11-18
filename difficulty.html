@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="snak.js"></script>
+    <title>Schwierigkeitsgrad anpassen - Snake Spiel</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        .slider-container {
+            width: 300px;
+            margin: 20px auto;
+        }
+
+        .slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 10px;
+            background: #d3d3d3;
+            outline: none;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+
+        .slider:hover {
+            opacity: 1;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #4caf50;
+            cursor: pointer;
+        }
+
+        .slider::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            background: #4caf50;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+       
+        <div class="container">
+            <h1>Snake Spiel</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="#download">Spieldownload</a></li>
+                        <li><a href="difficulty.html"> Schwierigkeitsgrad</a></li>
+                    <li><a href="highscore.html">Highscore-Liste</a></li>
+                    <li><a href="Bewertung.html">Spiel bewerten</a></li>
+                    <li><a href="#about">&Uuml;ber uns</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h1>Snak Spiel Schwierigkeitsgrad</h1>
+    <div class="slider-container">
+        <input type="range" min="1" max="10" value="5" class="slider" id="myRange">
+    </div>
+    <h2 id="difficulty">Schwierigkeitsgrad: 5</h2>
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("difficulty");
+        output.innerHTML = "Schwierigkeitsgrad: " + slider.value;
+
+        slider.oninput = function() {
+            output.innerHTML = "Schwierigkeitsgrad: " + this.value;
+        }
+    </script>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Snake Game. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+l>

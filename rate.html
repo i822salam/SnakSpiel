@@ -1,0 +1,85 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="snak.js"></script>
+    <title>Snake Spiel</title>
+    <style>
+        /* Füge dieses CSS für die Sterne hinzu */
+        .star-rating {
+            display: inline-block;
+        }
+
+        .star {
+            font-size: 24px;
+            color: gold;
+            cursor: pointer;
+        }
+
+        .star:hover,
+        .star.active {
+            color: darkorange;
+        }
+
+        #rating-value {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="rate">
+        <h2>Spiel bewerten</h2>
+        <p>Teilen Sie uns Ihre Meinung mit! Bewerten Sie das Spiel und helfen Sie uns, es noch besser zu machen. Ihre Bewertungen sind uns wichtig.</p>
+        <div class="star-rating" id="star-rating">
+            <span class="star" data-rating="1" onclick="setRating(1)">&#9733;</span>
+            <span class="star" data-rating="2" onclick="setRating(2)">&#9733;</span>
+            <span class="star" data-rating="3" onclick="setRating(3)">&#9733;</span>
+            <span class="star" data-rating="4" onclick="setRating(4)">&#9733;</span>
+            <span class="star" data-rating="5" onclick="setRating(5)">&#9733;</span>
+        </div>
+        <p id="rating-value">Bewertung: <span id="rating-score">0</span>/5</p>
+    </section>
+
+    <section id="difficulty">
+        <h2>Schwierigkeitsgrad anpassen</h2>  
+    </section>
+
+    <section id="updates">
+        <h2>Aktualisierungen und Feedback</h2>
+            <p>Haben Sie Beschwerden, Feedback oder Anregungen? Teilen Sie uns Ihr Anliegen mit!</p>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Ihre Nachricht</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Absenden</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <section id="about" class="dark">
+        <li><a href="about.html"> <h2>&Uuml;ber uns</h2></a></li>
+        <div class="container">
+      
+            <p>Erfahre mehr &uuml;ber die Entwickler hinter dem Snake Spiel.</p>
+            <!-- Füge Informationen über die Entwickler hinzu -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Snake Game. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>

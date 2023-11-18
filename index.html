@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="snake.js"></script>
+    <title>Snake Spiel</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Snake Spiel</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="#download">Spieldownload</a></li>
+                        <li><a href="difficulty.html"> Schwierigkeitsgrad</a></li>
+                    <li><a href="highscore.html">Highscore-Liste</a></li>
+                    <li><a href="Bewertung.html">Spiel bewerten</a></li>
+                    <li><a href="#about">&Uuml;ber uns</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Willkommen beim Snake Spiel!</h2>
+            <p>Erlebe das klassische Snake-Spiel in neuem Gewand. Programmierer haben sich zusammengetan, um...</p>
+            <a href="#download" class="btn">Jetzt herunterladen</a>
+        </div>
+    </section>
+
+    <section id="download" class="dark">
+        <div class="container">
+            <h2>Spieldownload</h2>
+            <p>Hier kannst du das Snake Spiel herunterladen und auf deinem Computer installieren.</p>
+            <!-- Füge Download-Links oder Installationsanweisungen hinzu -->
+        </div>
+    </section>
+
+    <section id="highscores">
+        <div class="container">
+            <h2>Highscore-Liste</h2>
+            <p>Sieh dir die besten Spieler und ihre Punktzahlen an.</p>
+            <ol id="highscore-list">
+                <!-- Füge die Highscore-Liste dynamisch mit JavaScript hinzu -->
+            </ol>
+        </div>
+    </section>
+
+    <section id="rate">
+        <div class="container">
+            <h2>Spiel bewerten</h2>
+            <p>Bewerte das Spiel mit 5 Sternen.</p>
+            <div id="rating-stars" class="rating-stars"></div>
+            <!-- Füge die Sterne dynamisch mit JavaScript hinzu -->
+            <button id="submit-rating" class="btn" onclick="submitRating()">Bewertung abschicken</button>
+        </div>
+    </section>
+
+    <section id="about" class="dark">
+        <div class="container">
+            <h2>&Uuml;ber uns</h2>
+            <p>Erfahre mehr &uuml;ber die Entwickler hinter dem Snake Spiel.</p>
+            <!-- Füge Informationen über die Entwickler hinzu -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Snake Spiel. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

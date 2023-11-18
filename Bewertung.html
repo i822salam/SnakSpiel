@@ -1,0 +1,82 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="snak.js"></script>
+    <title>Snake Spiel</title>
+    <style>
+        /* Füge dieses CSS für die Sterne hinzu */
+        .star-rating {
+            display: inline-block;
+        }
+
+        .star {
+            font-size: 24px;
+            color: gold;
+            cursor: pointer;
+        }
+
+        .star:hover,
+        .star.active {
+            color: darkorange;
+        }
+
+        #rating-value {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<header>
+        <div class="container">
+            <h1>Snake Spiel</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="#download">Spieldownload</a></li>
+                        <li><a href="difficulty.html"> Schwierigkeitsgrad</a></li>
+                    <li><a href="highscore.html">Highscore-Liste</a></li>
+                    <li><a href="Bewertung.html">Spiel bewerten</a></li>
+                    <li><a href="#about">&Uuml;ber uns</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="rate">
+        <h2>Spiel bewerten</h2>
+        <p>Teilen Sie uns Ihre Meinung mit! Bewerten Sie das Spiel und helfen Sie uns, es noch besser zu machen. Ihre Bewertungen sind uns wichtig.</p>
+        <div class="star-rating" id="star-rating">
+            <span class="star" data-rating="1" onclick="setRating(1)">&#9733;</span>
+            <span class="star" data-rating="2" onclick="setRating(2)">&#9733;</span>
+            <span class="star" data-rating="3" onclick="setRating(3)">&#9733;</span>
+            <span class="star" data-rating="4" onclick="setRating(4)">&#9733;</span>
+            <span class="star" data-rating="5" onclick="setRating(5)">&#9733;</span>
+        </div>
+        <p id="rating-value">Bewertung: <span id="rating-score">0</span>/5</p>
+    </section>
+
+    <section id="difficulty">
+        <h2>Schwierigkeitsgrad anpassen</h2>
+    </section>
+
+    <section id="updates">
+        <h2>Aktualisierungen und Feedback</h2>
+    </section>
+
+    <section id="about" class="dark">
+        <div class="container">
+            <h2>Über uns</h2>
+            <p>Erfahre mehr über die Entwickler hinter dem Snake Spiel.</p>
+            <!-- Füge Informationen über die Entwickler hinzu -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Snake Game. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>
